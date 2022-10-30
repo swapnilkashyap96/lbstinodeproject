@@ -1,0 +1,1645 @@
+
+
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* body{
+
+
+
+} */
+
+
+
+/*         loader-Desktop
+
+.loader{
+
+    height: 100vh;
+    width: 100% !important;
+    position: fixed;
+    background: white url(../img/bookloading.gif) no-repeat center center;
+    z-index: 2000000 !important;
+
+}
+
+ */
+
+/*         Cursor-Desktop            */
+/* .cursor{
+
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    z-index: 3000000;
+    position: fixed !important;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition:all 0.07s;
+    mix-blend-mode: difference;
+
+} */
+
+
+/*         Header-Desktop            */
+.header-one{
+
+    position: sticky;
+
+    top: 0%;
+    z-index: 999999;
+    background: linear-gradient(180deg, rgba(255,253,171,1) 13%, rgba(255,255,255,0) 100%);
+
+}
+
+.header-tab{
+
+    display: none;
+
+}
+
+.header-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header-one .header-logo{
+
+    display: inline;
+
+}
+
+.header-one .header-logo img{
+
+    position: absolute;
+    z-index: 100000 !important;
+    left: 25px;
+    top: 7px;
+    width: 80px;
+
+}
+
+
+.header-one .desktop-header-content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+
+}
+
+.header-one .desktop-header-content ul li a {
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.header-one .desktop-header-Contact-info ul{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    right: -120px;
+    top: 10px;
+
+}
+
+
+.header-one .desktop-header-Contact-info ul li a{
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.desktop-header-Contact-info ul #bars{
+    display: none;
+}
+
+#toggle-click{
+
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    z-index: 90;
+
+    display: none;
+
+}
+
+
+#toggle-click ul{
+
+   list-style: none;
+
+}
+
+#toggle-click ul li{
+
+    padding: 0px;
+    background-color: black;
+    opacity: 0.8;
+
+}
+
+#toggle-click ul li a{
+
+    padding: 20px 50px;
+
+    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+}
+
+#toggle-click ul li a:hover li{
+
+
+    background-color: #FFFDAB;
+
+ }
+
+
+
+
+
+
+
+
+
+/*        Hover On Anchor       */
+
+
+.desktop-header-content li a::before{
+
+    content: '';
+    display: inline-block;
+    background-color: #df4848;
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: 20%;
+    transition: all 1s;
+
+}
+
+.desktop-header-content li a:hover:before{
+    content: '';
+    display: inline-block;
+    background-color: #df4848;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom: 20%;
+    transition: all 1s;
+
+}
+
+.desktop-header-Contact-info li a::before{
+
+    content: '';
+    display: inline-block;
+    background-color: #df4848;
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    bottom: 20%;
+    transition: all 1s;
+
+}
+
+.desktop-header-Contact-info li a:hover:before{
+    content: '';
+    display: inline-block;
+    background-color: #df4848;
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    bottom: 20%;
+    transition: all 1s;
+
+}
+
+
+
+
+/*        max-width:1150px          */
+
+@media(max-width:1150px) {
+
+    .header-one .desktop-header-Contact-info ul li a,
+    .header-one .desktop-header-content ul li a
+    {
+
+        font-size: 0.8em;
+        padding: 10px 8px;
+
+    }
+
+    .header-one .desktop-header-content ul li a
+    {
+
+        left: -60px;
+
+    }
+    .Container-Heading p:before
+    {
+
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 15%;
+        top: 85%;
+
+    }
+
+    .Container-Heading p::after
+    {
+
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 15%;
+        top: 85%;
+
+    }
+
+
+    .flex-boxes .img-box
+    {
+
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+
+    }
+
+    .content-course-box h4
+    {
+
+        margin: 15px 0px;
+        text-align: left;
+
+    }
+
+
+
+}
+
+
+@media (max-width:1142px) {
+
+    .courses
+    {
+
+        width: 40%;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+
+@media(max-width:1024px) {
+
+    .flex-boxes .img-box
+    {
+
+        height: 108px;
+
+    }
+    .container-fluid .content-course-box
+    {
+
+        padding: 5px 5px 10px 5px;
+        text-align: center;
+
+    }
+    .container-fluid .content-course-box p
+    {
+
+        padding: 5px 5px 10px 5px;
+        text-align: justify;
+
+    }
+    .container-fluid .content-course-box h4 {
+
+        text-align: center;
+        margin: 5px 0px;
+    }
+
+    .Container-Heading p:before {
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 15%;
+        top: 85%;
+    }
+
+    .Container-Heading p::after {
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 15%;
+        top: 85%;
+    }
+    .courses-content{
+        width: 35%;
+        }
+}
+
+
+
+
+/*        max-width:920px           */
+@media (max-width:990px){
+
+    .courses-content
+    {
+
+        width: 45%;
+
+    }
+
+}
+
+
+
+
+
+/*        max-width:920px           */
+@media (max-width:920px){
+
+
+    .header-one
+    {
+
+        display: none;
+
+    }
+
+    .header-tab
+    {
+
+        display: block;
+
+    }
+
+    .slots
+    {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .slots>.contact-info
+    {
+
+        display: flex;
+        justify-content: start;
+        width: 60%;
+        background-color: #6495ed;
+
+    }
+
+    .contact-info>div>a
+    {
+
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 10px 15px 0 0;
+
+    }
+
+    .contact-info>div>a>i
+    {
+
+        margin: 0 25px 0 5px;
+
+    }
+
+    .contact-info>div>a>.fa-phone
+    {
+
+        transform: rotate(270deg);
+
+    }
+
+    .slots>.booking
+    {
+
+        padding: 10px 25px;
+        width: 40%;
+        text-align: center;
+        background-color: #fbfb27;
+
+    }
+
+    .slots>.booking a {
+
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .for-admin {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #FFFCC7;
+
+    }
+
+    .logo-img>a>img
+    {
+
+        width: 80px;
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        z-index: 10000;
+
+    }
+
+    .admission
+    {
+
+        display: flex;
+
+    }
+
+    .admit-link>a
+    {
+
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 35px;
+        margin: 10px 10px;
+
+    }
+  .admit-link>a:hover
+  {
+
+    background-color:#FBFB27;
+    color:black;
+
+  }
+
+    .toggle-btn
+    {
+
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+
+    }
+
+    .toggle-btn>.toggle
+    {
+
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 2px;
+
+    }
+
+    .flex-boxes .img-box
+    {
+
+        height: 108px;
+
+    }
+    .container-fluid .content-course-box
+    {
+
+        padding: 5px 5px 10px 5px;
+        text-align: center;
+
+    }
+    .container-fluid .content-course-box h4
+    {
+
+        text-align: center;
+        margin: 5px 0px;
+
+    }
+
+    .flex-boxes
+    {
+
+        flex-wrap: wrap;
+
+    }
+
+    .courses-content
+    {
+
+        width: 40%;
+
+    }
+
+
+    .Container-Heading p:before
+    {
+
+        content: '';
+        width: 130px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 7%;
+        top: 88%;
+
+    }
+
+    .Container-Heading p::after
+    {
+
+        content: '';
+        width: 130px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 7%;
+        top: 88%;
+
+    }
+
+
+    .footer-section
+    {
+
+       width: 50%;
+
+    }
+
+
+    .fixed-img-Title {
+        background-color: black;
+        display: inline-block;
+        padding: 20px;
+        height: 400px;
+        width: 40%;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        opacity: 0.6;
+    }
+
+    .fixed-img-Title h3{
+        font-size: 1.4em;
+    }
+
+    .fixed-img-Title .para-scroll{
+
+        font-size:1em;
+    }
+
+
+    .Back-img span a{
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        margin: 0px auto;
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /*        max-width:768px           */
+
+    @media(max-width:768px){
+
+        .courses-content
+        {
+
+            width: 45%;
+
+        }
+
+        .flex-boxes .img-box
+        {
+
+            height: 120px;
+
+        }
+        .container-fluid .content-course-box
+        {
+
+            padding: 5px 5px 10px 5px;
+            text-align: center;
+
+        }
+        .container-fluid .content-course-box h4
+        {
+
+            text-align: center;
+
+        }
+
+        .slider span{
+
+            font-size:1.2em;
+            top: 50%;
+            cursor: pointer;
+
+        }
+
+        .slider .left-arrow{
+
+            position: absolute;
+            left: 10%;
+
+
+        }
+        .slider .right-arrow{
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+    /*        max-width:767px           */
+
+    @media(max-width:767px){
+
+        .container, .container-sm
+        {
+
+            max-width: 626px;
+
+        }
+
+
+        .courses-content
+        {
+
+            width: 45%;
+
+        }
+
+        .flex-boxes .img-box
+        {
+
+            height: 120px;
+
+        }
+        .container-fluid .content-course-box
+        {
+
+            padding: 5px 5px 10px 5px;
+            text-align: center;
+
+        }
+        .container-fluid .content-course-box h4
+        {
+
+            text-align: center;
+
+        }
+
+        .Container-Heading p:before
+        {
+
+            content: '';
+            width: 100px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            left: 7%;
+            top: 88%;
+
+        }
+
+        .Container-Heading p::after
+        {
+            content: '';
+            width: 100px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            right: 7%;
+            top: 88%;
+
+        }
+
+        .slider span{
+
+            font-size:1em;
+            top: 50%;
+            cursor: pointer;
+
+        }
+
+        .slider .left-arrow{
+
+            position: absolute;
+            left: 10%;
+
+
+        }
+        .slider .right-arrow{
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+        .fixed-img-Title {
+            background-color: black;
+            display: inline-block;
+            padding: 20px;
+            height: 400px;
+            width: 50%;
+            position: absolute;
+            top: 0%;
+            left: 10%;
+            opacity: 0.6;
+        }
+
+        .fixed-img-Title h3{
+            font-size: 1.4em;
+        }
+
+        .fixed-img-Title .para-scroll{
+
+            font-size:1em;
+        }
+
+
+        .Back-img span a{
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 6px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            margin: 0px auto;
+            font-size: 1em;
+        }
+
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+/*        max-width:670px           */
+
+@media(max-width:670px){
+
+    .flex-boxes
+    {
+
+        flex-wrap: wrap;
+
+    }
+
+    .courses-content
+    {
+
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 40%;
+
+    }
+
+    .slider span{
+
+        font-size:1.2em;
+        top: 50%;
+        cursor: pointer;
+
+    }
+
+    .slider .left-arrow{
+
+        position: absolute;
+        left: 10%;
+
+
+    }
+    .slider .right-arrow{
+
+        position: absolute;
+        right: 10%;
+
+    }
+
+
+
+    .slots>.booking,
+    .contact-info>div
+    {
+
+        font-size: 0.8em;
+
+    }
+
+    .contact-info>div>a>i
+    {
+
+        margin: 0 10px 0 5px;
+
+    }
+
+    .admit-link>a {
+
+        padding: 10px 20px;
+        font-size: 0.8em;
+        margin-top: 17.5px;
+
+    }
+
+    .footer-section
+    {
+
+        width: 50%;
+
+    }
+
+    .fixed-img-Title {
+        background-color: black;
+        display: inline-block;
+        padding: 20px;
+        height: 400px;
+        width: 71%;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        opacity: 0.6;
+    }
+
+    .fixed-img-Title h3{
+        font-size: 1.4em;
+    }
+
+    .fixed-img-Title .para-scroll{
+
+        font-size:1em;
+    }
+
+
+    .Back-img span a{
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        margin: 0px auto;
+        font-size: 1em;
+    }
+
+
+    .arrow {
+
+        right: 8%;padding:13px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+/*        max-width:600px           */
+@media(max-width:600px) {
+
+
+        .flex-boxes
+        {
+
+            flex-wrap: wrap;
+            padding: 5px;
+
+        }
+        .courses-content
+        {
+
+            width: 60%;
+
+        }
+
+
+
+        .mail-to
+        {
+
+            display: none;
+
+        }
+
+        .contact-info>div>a>i
+        {
+
+            margin: 0 20px;
+
+        }
+
+        .slots>.booking,
+        .contact-info
+        {
+
+            width: 50%;
+
+        }
+
+        .toggle-btn
+        {
+
+            margin: 22.5px;
+
+        }
+
+        .Container-Heading p:before
+        {
+
+            content: '';
+            width: 70px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            left: 7%;
+            top: 88%;
+
+        }
+
+        .Container-Heading p::after
+        {
+            content: '';
+            width: 70px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            right: 7%;
+            top: 88%;
+
+        }
+
+        .slider span{
+
+            font-size:1.2em;
+            top: 50%;
+            cursor: pointer;
+
+        }
+
+        .slider .left-arrow{
+
+            position: absolute;
+            left: 10%;
+
+
+        }
+        .slider .right-arrow{
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+  /*        max-width:599px           */
+
+    @media(max-width:599px){
+
+        .courses-content
+        {
+
+          width: 60%;
+          margin-left: 0px;
+
+        }
+
+        .slider span{
+
+            font-size:1.2em;
+            top: 50%;
+            cursor: pointer;
+
+        }
+
+        .slider .left-arrow{
+
+            position: absolute;
+            left: 10%;
+
+
+        }
+        .slider .right-arrow{
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+        .fixed-img-Title {
+            background-color: black;
+            display: inline-block;
+            padding: 20px;
+            height: 400px;
+            width: 71%;
+            position: absolute;
+            top: 0%;
+            left: 10%;
+            opacity: 0.6;
+        }
+
+        .fixed-img-Title .para-scroll{
+
+            font-size: 00.8em;
+        }
+
+
+        .Back-img span a{
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 6px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            margin: 0px auto;
+            font-size: 0.8em;
+        }
+
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+}
+
+
+
+
+
+  /*        max-width:500px           */
+
+  @media(max-width:500px){
+
+    .courses-content
+    {
+
+      width: 60%;
+      margin-left: 0px;
+
+    }
+
+    .footer-section
+    {
+
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .slider span{
+
+        font-size:1em;
+        top: 50%;
+        cursor: pointer;
+
+    }
+
+    .slider .left-arrow{
+
+        position: absolute;
+        left: 10%;
+
+
+    }
+    .slider .right-arrow{
+
+        position: absolute;
+        right: 10%;
+
+    }
+
+    .fixed-img-Title {
+        background-color: black;
+        display: inline-block;
+        padding: 20px;
+        height: 400px;
+        width: 71%;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        opacity: 0.6;
+    }
+
+    .fixed-img-Title .para-scroll{
+
+        font-size: 00.8em;
+    }
+
+
+    .Back-img span a{
+        padding: 5px 10px;
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        margin: 0px auto;
+        font-size: 0.8em;
+    }
+
+
+    .arrow {
+
+        right: 8%;padding:13px;
+
+
+    }
+
+
+ }
+
+
+
+
+
+
+
+    /*        max-width:425px           */
+
+    @media(max-width:425px){
+
+      .courses-content
+      {
+
+        width: 80%;
+        margin-left: 0px;
+
+      }
+
+      .slider span{
+
+        font-size:1em;
+        top: 50%;
+        cursor: pointer;
+
+    }
+
+    .slider .left-arrow{
+
+        position: absolute;
+        left: 10%;
+
+
+    }
+    .slider .right-arrow{
+
+        position: absolute;
+        right: 10%;
+
+    }
+
+
+    .Container-Heading p:before
+    {
+
+        content: '';
+        width: 35px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 3%;
+        top: 88%;
+
+    }
+
+    .Container-Heading p::after
+    {
+
+        content: '';
+        width: 35px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 3%;
+        top: 88%;
+
+    }
+
+     .footer-section
+        {
+
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+   }
+
+
+
+
+
+
+
+
+    /*        max-width:390px           */
+
+    @media(max-width:390px){
+
+
+
+        .slots>.booking
+        {
+
+            width: 60%;
+
+        }
+
+        .contact-info
+        {
+
+            width: 40%;
+
+        }
+
+        .contact-info>div>a>i
+        {
+
+            margin: 0 10px;
+
+        }
+
+        .flex-boxes
+        {
+
+            flex-wrap: wrap;
+            padding: 5px;
+
+        }
+        .courses-content
+        {
+
+            width: 80%;
+            margin-left: 0px;
+
+        }
+
+        .Container-Heading p:before
+        {
+
+            content: '';
+            width: 40px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            left: 3%;
+            top: 88%;
+
+        }
+
+        .Container-Heading p::after
+        {
+
+            content: '';
+            width: 40px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            right: 3%;
+            top: 88%;
+
+        }
+
+        .slider span{
+
+            font-size:1em;
+            top: 50%;
+            cursor: pointer;
+
+        }
+
+        .slider .left-arrow{
+
+            position: absolute;
+            left: 10%;
+
+
+        }
+        .slider .right-arrow{
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+        .footer-section
+        {
+
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+
+        .fixed-img-Title {
+            background-color: black;
+            display: inline-block;
+            padding: 20px;
+            height: 400px;
+            width: 71%;
+            position: absolute;
+            top: 0%;
+            left: 10%;
+            opacity: 0.6;
+        }
+        .fixed-img-Title .title-scroll{
+            margin-top: 0px;
+        }
+
+        .fixed-img-Title p{
+
+            font-size: 0.8em;
+            margin-top: 0px;
+            margin-bottom: 20px;
+
+        }
+        .fixed-img-Title .h3{
+
+
+            margin-top: 10px;
+             margin-bottom: 10px;
+
+        }
+
+
+        .Back-img span a{
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 6px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            margin: 0px auto;
+            font-size: 0.8em;
+        }
+
+
+        .arrow {
+
+            right: 8%;padding:13px;
+
+
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:320px){
+
+
+
+    .Container-Heading p:before
+    {
+
+        content: '';
+        width: 29px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 3%;
+        top: 88%;
+
+    }
+
+    .Container-Heading p::after
+    {
+
+        content: '';
+        width: 29px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 3%;
+        top: 88%;
+
+    }
+
+    .admit-link
+    {
+
+        display: none;
+
+    }
+
+    .text-center
+    {
+
+        overflow: hidden;
+
+    }
+
+    .footer-section
+    {
+
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .fixed-img-Title {
+        background-color: black;
+        display: inline-block;
+        padding: 20px;
+        height: 400px;
+        width: 71%;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        opacity: 0.6;
+    }
+
+    .fixed-img-Title .para-scroll{
+
+        font-size: 0.8em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .Back-img span a{
+        padding: 5px 10px;
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        margin: 0px auto;
+        font-size: 0.8em;
+    }
+
+    .arrow {
+
+        right: 8%;padding:13px;
+
+
+    }
+
+
+
+
+}

@@ -1,0 +1,974 @@
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+/* body{
+
+    
+
+} */
+
+
+
+/*         loader-Desktop            */
+
+/* .loader{
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: white url(../img/Loading.gif) no-repeat center center;
+    z-index: 2000000 !important;
+
+} */
+
+
+
+/*         Cursor-Desktop            */
+/* .cursor{
+
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    z-index: 3000000;
+    position: fixed !important;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition:all 0.07s;
+    mix-blend-mode: difference;
+
+} */
+
+
+/*         Header-Desktop            */
+.header-one{
+
+    position: sticky;
+    height: 100px;
+    top: 0%;
+    z-index: 999999;
+    background-color:#FFFCC7;
+
+}
+
+.header-tab{
+
+    display: none;
+
+}
+
+.header-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header-one .header-logo{
+
+    display: inline;
+
+}
+
+.header-one .header-logo img{
+
+    position: absolute;
+    z-index: 100000 !important;
+    left: 25px;
+    top: 7px;
+    width: 80px;
+
+}
+
+.header-one .desktop-header-content ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+    top: 25px;
+
+}
+
+.header-one .desktop-header-content ul li a {
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.header-one .desktop-header-Contact-info ul{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    right: -120px;
+    top: 25px;
+
+}
+
+
+.header-one .desktop-header-Contact-info ul li a{
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.desktop-header-Contact-info a span{
+    display: none;
+}
+
+
+
+
+#toggle-click{
+    
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    z-index: 90;
+    
+    display: none;
+   
+}  
+
+
+#toggle-click ul{
+
+   list-style: none;
+    
+}
+
+#toggle-click ul li{
+
+    padding: 0px;
+    background-color: black;
+    opacity: 0.8;
+    
+}
+
+#toggle-click ul li a{
+
+    padding: 20px 50px;
+   
+    display: block;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    
+}
+
+#toggle-click ul li a:hover li{
+
+   
+    background-color: #FFFDAB;
+     
+ }
+  
+  
+
+
+
+
+
+
+
+
+/*        slider-container       */
+
+
+
+
+
+/*         Course-Section        */
+.course-i{
+
+    background-color: #f8f7df;
+
+}
+.container{
+    
+    padding: 10px;
+
+}
+
+.flex-boxes,.footer{
+
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+/******************** Gallary  ********************/
+
+
+.portfolio-menu{
+
+	text-align:center;
+
+}
+
+.portfolio-menu ul li{
+
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+
+}
+
+
+.portfolio-item .item{
+
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /*        Arrow backgroud        */
+
+
+    .arrow a { 
+        font-size: 1em;
+        color: white; text-decoration: none;
+    
+    }
+
+    .arrow {
+        text-align: center;
+        margin: 0 0 8% 0;
+        
+        position: fixed;
+        bottom: 0px;
+        right: 4%;
+        z-index: 99999;
+        border-radius: 5px;
+        background-color: black;
+        display: none;
+        padding: 20px;
+     
+    }
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*        Footer Contents         */
+.footer-changes{
+
+    text-decoration: none;
+    color: #6C757D;
+
+}
+
+
+.footercolor{
+
+    background-color: black;
+
+}
+.footer{
+
+    background-color: none;
+    color: #6C757D;
+    overflow: hidden;
+
+}
+
+.footer-section{
+
+    width: 20%;
+    
+}
+
+.footer .footer-section ul{
+
+    list-style: none;
+    padding: 0px;
+
+}
+
+
+.footer .footer-section ul li{
+
+    padding: 0px;
+    line-height: 30px;
+
+}
+
+
+.footer .footer-section ul li a, .footer a{
+
+    padding: 15px;
+    color: #6C757D; 
+    text-decoration: none;
+
+}
+
+
+.footer .footer-section ul li a:hover{
+
+    color: antiquewhite;
+
+}
+
+.footer a:hover{
+
+    color: antiquewhite;
+
+}
+
+.Copyright{
+
+    text-align: center;
+    color: #6C757D;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+
+
+
+/*        max-width:1150px          */
+
+@media(max-width:1150px) {
+
+    .header-one .desktop-header-Contact-info ul li a,
+    .header-one .desktop-header-content ul li a
+    {
+
+        font-size: 0.8em;
+        padding: 10px 8px;
+
+    }
+
+    .header-one .desktop-header-content ul li a 
+    {
+
+        left: -60px;
+
+    }
+    .Container-Heading p:before
+    {
+
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        left: 15%;
+        top: 85%;
+
+    }
+    
+    .Container-Heading p::after
+    {
+        
+        content: '';
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: #df4848;
+        position: absolute;
+        right: 15%;
+        top: 85%;
+
+    }
+
+    
+    
+    
+    
+}
+
+
+@media (max-width:1142px) {
+
+    .courses
+    {
+
+        width: 40%;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+
+@media(max-width:1024px) {
+
+   
+}
+
+
+
+
+/*        max-width:920px           */
+@media (max-width:990px){
+
+    
+
+}
+
+
+
+
+
+/*        max-width:920px           */
+@media (max-width:920px){
+    
+   
+    .header-one 
+    {
+
+        display: none;
+
+    }
+
+    .header-tab 
+    {
+
+        display: block;
+
+    }
+
+    .slots
+    {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .slots>.contact-info 
+    {
+
+        display: flex;
+        justify-content: start;
+        width: 60%;
+        background-color: #6495ed;
+
+    }
+
+    .contact-info>div>a
+    {
+
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin: 10px 15px 0 0;
+
+    }
+
+    .contact-info>div>a>i
+    {
+
+        margin: 0 25px 0 5px;
+
+    }
+
+    .contact-info>div>a>.fa-phone 
+    {
+
+        transform: rotate(270deg);
+
+    }
+
+    .slots>.booking 
+    {
+
+        padding: 10px 25px;
+        width: 40%;
+        text-align: center;
+        background-color: #fbfb27;
+
+    }
+
+    .slots>.booking a {
+
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .for-admin {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #FFFCC7;
+
+    }
+
+    .logo-img>a>img 
+    {
+
+        width: 80px;
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        z-index: 10000;
+
+    }
+
+    .admission 
+    {
+
+        display: flex;
+
+    }
+
+    .admit-link>a 
+    {
+
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        border-radius: 35px;
+        margin: 5px 10px;
+
+    }
+  .admit-link>a:hover
+  {
+
+    background-color:#FBFB27;
+    color:black;
+
+  }
+
+    .toggle-btn 
+    {
+
+        display: flex;
+        flex-direction: column;
+        margin: 20px 25px;
+
+    }
+
+    .toggle-btn>.toggle 
+    {
+
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 2px;
+
+    }
+
+
+
+    .footer-section
+    {
+
+       width: 50%;  
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*        max-width:670px           */
+
+@media(max-width:670px){
+
+       
+
+        .slots>.booking,
+        .contact-info>div 
+        {
+
+            font-size: 0.8em;
+
+        }
+
+        .contact-info>div>a>i 
+        {
+
+            margin: 0 10px 0 5px;
+
+        }
+
+        .admit-link>a {
+
+            padding: 10px 20px;
+            font-size: 0.8em;
+            margin-top: 17.5px;
+
+        }
+
+        .footer-section
+        {
+
+            width: 50%; 
+
+        }
+
+        .arrow {
+        
+            right: 8%;padding:13px;
+        
+        
+        }
+    
+
+        
+}
+
+
+
+
+
+
+
+    /*        max-width:768px           */
+
+    @media(max-width:768px){
+
+        .arrow {
+        
+            right: 8%;padding:13px;
+        
+        
+        }
+
+        
+
+    }
+
+
+    
+    /*        max-width:767px           */
+
+    @media(max-width:767px){
+
+       
+
+    }
+
+
+
+
+
+
+
+
+
+/*        max-width:600px           */
+@media(max-width:600px) {
+
+
+        .mail-to
+        {
+
+            display: none;
+
+        }
+
+        .contact-info>div>a>i 
+        {
+
+            margin: 0 20px;
+
+        }
+
+        .slots>.booking,
+        .contact-info 
+        {
+
+            width: 50%;
+
+        }
+
+        .toggle-btn 
+        {
+
+            margin: 22.5px;
+
+        }
+
+        .Container-Heading p:before 
+        {
+
+            content: '';
+            width: 70px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            left: 7%;
+            top: 88%;
+
+        }
+        
+        .Container-Heading p::after 
+        {
+            content: '';
+            width: 70px;
+            height: 2px;
+            display: block;
+            background-color: #df4848;
+            position: absolute;
+            right: 7%;
+            top: 88%;
+
+        }
+
+
+
+        .arrow {
+        
+            right: 8%;padding:13px;
+        
+        
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+  /*        max-width:599px           */
+
+    @media(max-width:599px){
+
+
+        .arrow {
+        
+            right: 8%;padding:13px;
+        
+        
+        }
+                
+
+       
+     }
+
+
+
+
+
+  /*        max-width:500px           */
+
+  @media(max-width:500px){
+
+    
+    .arrow {
+        
+        right: 8%;padding:13px;
+    
+    
+    }
+
+ }
+
+
+
+
+
+
+
+    /*        max-width:425px           */
+
+    @media(max-width:425px){
+
+      
+
+   }
+
+
+
+
+
+
+
+
+    /*        max-width:390px           */
+
+    @media(max-width:390px){
+
+           
+        
+        .slots>.booking
+        {
+
+            width: 60%;
+
+        }
+
+        .contact-info
+        {
+
+            width: 40%;
+
+        }
+
+        .contact-info>div>a>i
+        {
+
+            margin: 0 10px;
+
+        }
+        .footer-section
+        {
+
+            width: 100%; 
+            text-align: center; 
+            margin-top: 20px;  
+
+        }
+
+        .arrow {
+        
+            right: 8%;padding:13px;
+        
+        
+        }
+    
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:320px){
+
+    
+  
+
+    .admit-link
+    {
+
+        display: none;
+
+    }
+
+    .text-center
+    {
+
+        overflow: hidden;
+
+    }
+
+    .footer-section
+    {
+
+        width: 100%; 
+        text-align: center; 
+        margin-top: 20px; 
+
+    }
+
+    .arrow {
+        
+        right: 8%;padding:13px;
+    
+    
+    }
+
+
+
+
+}
